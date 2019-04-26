@@ -1,0 +1,147 @@
+.footer{
+	font-family: 'Roboto';
+	&-top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 50px 40px;
+		border-top: 1px solid #E0E0E0;
+		border-bottom: 1px solid #E0E0E0;
+		&-menu-2 {
+			display: flex;
+			align-items: center;
+			.header-right-info {
+				margin-right: 20px;
+			}
+		}
+		&-menu{
+			font-weight: 500;
+			font-size: 14px;
+			letter-spacing: 1.2px;
+			text-transform: uppercase;
+			color: #242424;
+			display: flex;
+			justify-content: space-between;
+			width: 52%;
+			&__link{
+				@media screen and (min-width: 1365px){
+					&:hover{
+						color: #17A96B;
+					}
+					&:active{
+						color: #0C653F;
+					}
+				}
+			}
+		}
+		&-socials{
+			svg{
+				margin: 0 12px;
+			}
+		}
+	}
+	&-bot{
+		display: flex;
+		justify-content: space-between;
+		padding: 60px 40px;
+		&__left{
+			font-family: Crimson Text;
+			font-style: italic;
+			font-size: 14px;
+			line-height: 22px;
+			color: #232323;
+			opacity: 0.4;
+			font-weight: bold;
+		}
+		&-right{
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 12px;
+			color: #212121;
+			opacity: 0.4;
+			>a{
+				margin-right: 40px;
+			}
+		}
+	}
+}
+
+@include w1024 {
+	.footer{
+		&-top{
+			padding: 30px 40px 40px;
+			flex-direction: column;
+			align-items: center;
+			&__logo{
+				img{
+					height: 24px;
+				}
+			}
+			&-menu-2 {
+				width: 100%;
+				justify-content: space-between;
+			}
+			&-menu{
+				justify-content: space-between;
+				width: 100%;
+				@include pad(top, grey);
+				@include pad(bottom, grey);
+				&__link{
+					font-size: 12px;
+				}
+			}
+			&-socials{
+				width: 150px;
+				display: flex;
+				justify-content: space-between;
+				svg{
+					margin: 0;
+				}
+			}
+		}
+		&-bot{
+			padding: 30px 40px;
+			align-items: center;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.footer {
+		.footer-top {
+			.footer-top-menu-2 {
+				justify-content: center;
+			}
+		}
+	}
+}
+@include w480 {
+	.footer{
+		&-top{
+			padding: 20px 0;
+			&-menu{
+				margin: 30px 0 10px;
+				flex-direction: column;
+				align-items: center;
+				&__link{
+					margin-bottom: 20px;
+				}
+			}
+		}
+		&-bot{
+			flex-direction: column-reverse;
+			padding: 20px 0;
+			align-items: center;
+			&__left{
+				display: block;
+				margin: 30px auto 0;
+			}
+			&-right{
+				text-align: center;
+				&>a{
+					display: block;
+					margin: 0 auto 30px;
+				}
+			}
+		}
+	}
+}

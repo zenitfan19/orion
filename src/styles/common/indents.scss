@@ -1,0 +1,14 @@
+$levels: (
+	yellow: (10px),
+	red:    (20px),
+	blue:   (30px),
+	grey:   (40px),
+	purple: (50px),
+	green:  (60px),
+	orange: (80px),
+	cyan:   (100px)
+);
+
+@mixin pad ($side, $color) {
+	margin-#{$side}: #{map-get($levels, $color)};
+}

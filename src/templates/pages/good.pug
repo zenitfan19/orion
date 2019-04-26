@@ -1,0 +1,123 @@
+extends ../template
+
+block variables
+	- var title = 'Товар'
+
+block content
+	.good
+		.good-top
+			.good-top-slider
+				.good-top-slider-item
+					a(data-fancybox="1" href="assets/images/good-slider-item.jpg")
+						img(src="assets/images/good-slider-item.jpg", alt="")
+				.good-top-slider-item
+					a(data-fancybox="1" href="assets/images/good-slider-item.jpg")
+						img(src="assets/images/good-slider-item.jpg", alt="")
+				.good-top-slider-item
+					a(data-fancybox="1" href="assets/images/good-slider-item.jpg")
+						img(src="assets/images/good-slider-item.jpg", alt="")
+				.good-top-slider-item
+					a(data-fancybox="1" href="assets/images/good-slider-item.jpg")
+						img(src="assets/images/good-slider-item.jpg", alt="")
+				.good-top-slider-item
+					a(data-fancybox="1" href="assets/images/good-slider-item.jpg")
+						img(src="assets/images/good-slider-item.jpg", alt="")
+			.good-top-main
+				h1.good-top-main__title Кольпоскоп модульный бинокулярный КМ-2
+				.good-top-main__text Модульный кольпоскоп КМ-1 предназначен для проведения обследования слизистой оболочки влагалища, шейки матки и нижней трети цервикального канала в гинекологических отделениях клиник, больниц и женских консультаций.
+				.good-top-main__info Перемещение вдоль оптической оси (фокусировка), мм: 60
+				.good-top-main__info Освещение объекта: белый свет и сине-зеленый светофильтр; регулировка освещенности
+				.good-top-main__info Бинокулярное стереоскопическое наблюдение с возможностью регулировки освещенности объекта и фокусировки на всех увеличениях.
+				a.good-top-main__btn(href="#") Запросить цену
+		.good-tabs
+			ul.good-tabs-navigation
+				li
+					a.good-tabs-navigation__item(href="#goodTab1") Характеристики
+				li
+					a.good-tabs-navigation__item(href="#goodTab2") Комплектация
+			.good-tabs-tab#goodTab1
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Рабочее расстояние, мм:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 300
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Увеличение объектива бинокулярной насадки, крат:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 0,6-2,4
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Увеличение окуляров бинокулярной насадки, крат:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 10
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Плавное увеличение оптической системы, крат:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 6-24
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Источник света:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right Кольцевой светодиодный осветитель
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Изменение расстояния глазной базы окуляров на насадке, мм:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 55-75
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Диапазон диоптрийной подвижки, дптр:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right ±7
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Рабочие высоты, мм:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 1034-1434
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Перемещение механизма фокусировки, мм:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 60
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Mощность, ВА:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 35
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Габаритные размеры, мм:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 600х600х1434
+				.good-tabs-tab-row
+					.good-tabs-tab-row-left
+						span Масса, кг:
+						.good-tabs-tab-row-left-dots
+					.good-tabs-tab-row-right 12,8
+			.good-tabs-tab#goodTab2
+				ul
+					li Сменные лампы
+					li Кабель питания
+					li Линзы
+		.good-more
+			.good-more__title С этим товаром покупают
+			.good-more-content
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				

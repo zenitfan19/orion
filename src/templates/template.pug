@@ -1,0 +1,34 @@
+block variables
+
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		title #{title}
+		meta(content="" name="description")
+		meta(content="" name="keywords")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		meta(content="ie=edge" http-equiv="x-ua-compatible")
+		link(rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon")
+		link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,900" rel="stylesheet")
+		link(href="https://fonts.googleapis.com/css?family=Crimson+Text:400i" rel="stylesheet")
+		link(rel="stylesheet" type="text/css" href="assets/scripts/slick/slick.css")
+		link(rel="stylesheet" type="text/css" href="assets/scripts/slick/slick-theme.css")
+		link(rel="stylesheet" type="text/css" href="assets/scripts/fancybox/jquery.fancybox.min.css")
+		link(rel="stylesheet", href="assets/styles/app.min.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251")
+		script(type="text/javascript" src="assets/scripts/slick/slick.min.js")
+		script(type="text/javascript" src="assets/scripts/jquery.inputmask.bundle.js")
+		script(type="text/javascript" src="assets/scripts/fancybox/jquery.fancybox.min.js")
+		script(src="assets/scripts/main.js")
+		
+	body
+		<div id="fb-root"></div>
+		<script async defer src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v3.2"></script>
+		.wrapper
+			include common/header.pug
+			.content
+				block content
+			include common/footer.pug 
+		include common/popup.pug 

@@ -1,0 +1,89 @@
+extends ../template
+
+block variables
+	- var title = 'Каталог'
+
+block content
+	.catalog
+		form.catalog-filter(action="")
+			.catalog-filter__btnClose 
+				img(src="assets/images/close.svg", alt="")
+			.catalog-filter-wrap
+				.catalog-filter-items
+					.catalog-filter-item
+						.catalog-filter-item__title Категория
+						.catalog-filter-item-radios
+							a(href="#") Гинекология
+							a(href="#") Офтальмология
+					.catalog-filter-item
+						.catalog-filter-item__title Источник света
+						.catalog-filter-item-radios
+							input(type="checkbox" id="Галогеновый" name="light" value="Галогеновый")
+							label.popupChoice1(for="Галогеновый") Галогеновый
+							input(type="checkbox" id="Светодиодный" name="light" value="Светодиодный")
+							label(for="Светодиодный") Светодиодный
+							input(type="checkbox" id="Ксеноновый" name="light" value="Ксеноновый")
+							label(for="Ксеноновый") Ксеноновый
+					.catalog-filter-item
+						.catalog-filter-item__title Степень увеличения
+						.catalog-filter-item-radios
+							input(type="checkbox" id="1" name="scale" value="1")
+							label.popupChoice1(for="1") Галогеновый
+							input(type="checkbox" id="2" name="scale" value="2")
+							label.popupChoice1(for="2") Светодиодный
+							input(type="checkbox" id="3" name="scale" value="3")
+							label.popupChoice1(for="3") Ксеноновый
+					.catalog-filter-item
+						.catalog-filter-item__title Наличие видеосистемы
+						.catalog-filter-item-radios
+							input(type="checkbox" id="4" name="video" value="4")
+							label(for="4") Галогеновый
+							input(type="checkbox" id="5" name="video" value="5")
+							label(for="5") Светодиодный
+							input(type="checkbox" id="6" name="video" value="6")
+							label(for="6") Ксеноновый
+				.catalog-filter-bot
+					button.catalog-filter-bot__submit(type='submit') Применить
+					button.catalog-filter-bot__reset(type='reset') Сбросить
+		.catalog-main
+			.catalog-main__btnFilter Фильтр +
+			h1.catalog-main__title Гинекология
+			.catalog-main-content
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+				a.catalog-main-content-item(href="good.html")
+					.catalog-main-content-item-img
+						img(src="assets/images/catalog-item1.jpg", alt="")
+					.catalog-main-content-item__title Кольпоскоп модульный бинокулярный КМ-2 с галогеновым источником света
+			.catalog-main__more Показать еще
+			.catalog-main__text В мероприятии приняли участие с российской стороны представители Санкт-Петербурга - вице-губернатор Сергей Николаевич Мовчан, председатель Комитета по промышленной политике и инновациям Максим Семенович Мейксин, представители Комитета по внешнем связям, Комитета по здравоохранению и представители организаций по производству медицинской техники. С немецкой стороны принимали участие государственный секретарь Министерства экономики, труда и здравоохранения Д-р Штефан Рудольф, управляющий директор медицинского кластера федеральной земли Мекленбург – Передней Померании BioCon Valley Ларс Бауер и представители немецких организаций по производству медицинской техники.

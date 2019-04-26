@@ -1,0 +1,101 @@
+extends ../template
+
+block variables
+	- var title = 'Главная'
+
+block content
+	.main
+		.main-banner
+			a.main-banner-item(href="#" style="background: url('assets/images/banner.jpg') center no-repeat; background-size: cover")
+				.main-banner-item-content
+					.main-banner-item-content__title С 11 по 13 октября в Москве прошел Российский конгресс лабораторной медицины
+					.main-banner-item-content__btn Подробнее
+			a.main-banner-item(href="#" style="background: url('assets/images/banner.jpg') center no-repeat; background-size: cover")
+				.main-banner-item-content
+					.main-banner-item-content__title С 11 по 13 октября в Москве прошел Российский конгресс лабораторной медицины
+					.main-banner-item-content__btn Подробнее
+			a.main-banner-item(href="#" style="background: url('assets/images/banner.jpg') center no-repeat; background-size: cover")
+				.main-banner-item-content
+					.main-banner-item-content__title С 11 по 13 октября в Москве прошел Российский конгресс лабораторной медицины
+					.main-banner-item-content__btn Подробнее
+		.main-cards
+			.main-cards-wrap
+				.main-cards-item-wrap
+					a.main-cards-item(href="catalog.html" style="background: url('assets/images/main-good1.jpg') center no-repeat; background-size: cover")
+						.main-cards-item__category Категория
+						.main-cards-item-wrap
+							.main-cards-item__title Микроскопы и хирургические инструменты
+							.main-cards-item__btn Перейти
+				.main-cards-item-wrap
+					a.main-cards-item(href="catalog.html" style="background: url('assets/images/main-good2.jpg') center no-repeat; background-size: cover")
+						.main-cards-item__category Категория
+						.main-cards-item-wrap
+							.main-cards-item__title Офтальмология
+							.main-cards-item__btn Перейти
+				.main-cards-item-wrap
+					a.main-cards-item(href="catalog.html" style="background: url('assets/images/main-good3.jpg') center no-repeat; background-size: cover")
+						.main-cards-item__category Категория
+						.main-cards-item-wrap
+							.main-cards-item__title Гинекология
+							.main-cards-item__btn Перейти
+				.main-cards-item-wrap
+					a.main-cards-item(href="catalog.html" style="background: url('assets/images/main-good4.jpg') center no-repeat; background-size: cover")
+						.main-cards-item__category Категория
+						.main-cards-item-wrap
+							.main-cards-item__title Патанатомия, гистология, цитология
+							.main-cards-item__btn Перейти
+				.main-cards-item-wrap
+					a.main-cards-item(href="catalog.html" style="background: url('assets/images/main-good5.jpg') center no-repeat; background-size: cover")
+						.main-cards-item__category Категория
+						.main-cards-item-wrap
+							.main-cards-item__title Общелабораторное оборудование
+							.main-cards-item__btn Перейти
+				.main-cards-item-wrap
+					a.main-cards-item(href="catalog.html" style="background: url('assets/images/main-good6.jpg') center no-repeat; background-size: cover")
+						.main-cards-item__category Категория
+						.main-cards-item-wrap
+							.main-cards-item__title Расходные материалы
+							.main-cards-item__btn Перейти
+		.main-news
+			.main-news-wrap
+				.news-content-item-wrap.big
+					a.news-content-item(href="pagenews.html" style="background-image: url('assets/images/main-news1.jpg')")
+						.news-content-item-top
+							.news-content-item-top-date
+								span.news-content-item-top-date__day 15
+								span.news-content-item-top-date-wrap
+									span.news-content-item-top-date__mounth Октября
+									span.news-content-item-top-date__year 2017
+							.news-content-item-top__category Статья
+						.news-content-item-bot
+							.news-content-item-bot__title Компания «ОРИОН МЕДИК» представила свою продукцию на XII Съезде Ассоциации клинических цитологов России.
+							.news-content-item-bot__btn Читать
+				.news-content-item-wrap.big
+					a.news-content-item.big(href="pagenews.html" style="background-image: url('assets/images/main-news2.jpg')")
+						.news-content-item-top
+							.news-content-item-top-date
+								span.news-content-item-top-date__day 17
+								span.news-content-item-top-date-wrap
+									span.news-content-item-top-date__mounth Июля
+									span.news-content-item-top-date__year 2017
+							.news-content-item-top__category Статья
+						.news-content-item-bot
+							.news-content-item-bot__title 4 июля 2017 года в Центре импортозамещения и локализации состоялась видеоконференция с представителями федеральной земли Мекленбург
+							.news-content-item-bot__btn Читать
+		.main-info
+			.main-info-wrap
+				.main-info-left
+					.main-info-left__title Инновации, командная работа, качество – основные элементы политики компании
+					span.main-info-left__subtitle Компания создана в апреле 1993 года
+					span.main-info-left__subtitle Мы развиваем и совершенствуем 4 основных направления нашей деятельности:
+					p — Разработку и производство комплексов обработки избирательных бюллетеней
+					p — Разработку и производство оптических приборов
+					p — Опытно-конструкторскую разработку и производство изделий медицинского назначения
+					p — Металлообработку деталей на станках с ЧПУ сторонним заказчикам на собственном механическом участке
+					a.main-info-left__btn(href="#") Узнать больше о компании
+				.main-info-right
+					img(src="assets/images/main-image.jpg", alt="")
+		.main-bot
+			.main-bot-wrap
+				.main-bot__title Сегодня предприятие способно предложить полный спектр оборудования для комплексного оснащения лабораторий.
+				a.main-bot__btn(href="#") Подробнее
